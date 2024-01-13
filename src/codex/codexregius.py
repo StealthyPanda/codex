@@ -81,21 +81,21 @@ def dblog(*values, end : str = '\n') -> Any:
 def error(*values, end : str = '\n') -> Any:
     original = colvals[str]
     colvals[str] = colorama.Fore.RED + colorama.Style.BRIGHT
-    vals = dblog(*values, end)
+    vals = dblog(*values, end = end)
     colvals[str] = original
     return vals
 
 def warning(*values, end : str = '\n') -> Any:
     original = colvals[str]
     colvals[str] = colorama.Fore.YELLOW + colorama.Style.BRIGHT
-    vals = dblog(*values, end)
+    vals = dblog(*values, end = end)
     colvals[str] = original
     return vals
 
 def ok(*values, end : str = '\n') -> Any:
     original = colvals[str]
     colvals[str] = colorama.Fore.GREEN + colorama.Style.BRIGHT
-    vals = dblog(*values, end)
+    vals = dblog(*values, end = end)
     colvals[str] = original
     return vals
 
