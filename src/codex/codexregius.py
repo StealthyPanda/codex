@@ -58,7 +58,7 @@ def log(*values, end : str = '\n', indent : int = 0) -> None:
             if type(value) in colvals.keys():
                 print(f'{colvals[type(value)]}{value}{colorama.Style.RESET_ALL}', end = '')
             else:
-                print(f'{colorama.Fore.CYAN}{value}{colorama.Style.RESET_ALL}', end = '')
+                print(f'{colorama.Fore.BLUE}{value}{colorama.Style.RESET_ALL}', end = '')
     print(end, end = '')
 
 
